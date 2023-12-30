@@ -1,9 +1,56 @@
-{% load static %}
-{% include 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더사랑통합재가센터 서비스</title>
 
+    <!-- Google Fonts: Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-{% block content %}
-<!-- Image Slider -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    
+        #map {
+            width: 100%;
+            height: 350px;
+        }
+        .blurry-background {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .blurry-background::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('img/메인화면.jpg'); /* 경로 수정 필요 */
+            filter: blur(5px);
+            z-index: -1;
+        }
+    
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
 <section class="container mt-6 blurry-background">
     
     <img src="{% static 'img/메인화면.jpg' %}" class="img-fluid mx-auto d-block" alt="Image 1" style="object-fit: cover; width: 100%; max-height: 800px; opacity: 0.5;">
@@ -40,11 +87,6 @@
     </section>
         
     <br>
-    {% comment %} <hr>
-    <div class="text-center">
-            <a href="{% url 'registration' %}" class="btn btn-primary" style = "font-size: 30px; background: green;">장기요양등급 대리신청 하러가기</a>
-    </div>
-    <hr> {% endcomment %}
     
     <footer class="mt-5 p-4 text-white bg-dark">
         <div class="container">
@@ -53,15 +95,6 @@
             <p>찾아주셔서 감사합니다. 친절함과 전문성으로 보답하겟습니다.</p>
         </div>
     </footer>
-    
-{% endblock %}
-    
-    
-    
-    
-    
-    
-{% block script %}
 <!-- Kakao maps API -->
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8842d176c845931a407c3ad4309249af"></script>
 <script>
@@ -90,4 +123,4 @@
     });
     infowindow.open(map, marker);
 </script>
-{% endblock %}
+</html>
