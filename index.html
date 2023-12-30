@@ -51,6 +51,32 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html" style="font-weight: bold; color: green; font-size: 30px; font-family: 'Noto Sans KR', sans-serif; border: 2px solid green; padding: 10px; border-radius: 50%; display: inline-block;">
+            더사랑
+        </a>
+        <!-- Toggle button for mobile view -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navbar items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">홈</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="intro_service.html">서비스 소개</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="registration.html">장기요양등급대리신청문의</a>
+                </li> -->
+                <!-- Add other menu items as necessary -->
+            </ul>
+        </div>
+    </nav>
 <section class="container mt-6 blurry-background">
     
     <img src="static/img/메인화면.jpg" class="img-fluid mx-auto d-block" alt="Image 1" style="object-fit: cover; width: 100%; max-height: 800px; opacity: 0.5;">
@@ -78,12 +104,15 @@
             </address>
     </div>
 </section>
-<div class="text-center">
-    <a href="intro_service.html" class="btn btn-primary" style = "font-size: 30px; background: green;">서비스 소개 보러가기</a>
-</div>
 <section class="container mt-4 text-center">
-    <!-- 전화상담하기 버튼 -->
-    <a href="tel:032-681-8621" class="btn btn-primary" style="font-size: 20px; background: blue; color: white;">전화상담하기</a>
+    <div class="row justify-content-center">
+        <div class="col-auto mb-2">
+            <a href="intro_service.html" class="btn btn-primary" style="font-size: 20px; background: green; border-color: green; color: white;">서비스 소개 보러가기</a>
+        </div>
+        <div class="col-auto mb-2">
+            <a href="tel:032-681-8621" class="btn btn-primary" style="font-size: 20px; background: green; border-color: green; color: white;">전화상담하기</a>
+        </div>
+    </div>
 </section>
     
 <br>
@@ -96,7 +125,7 @@
     </div>
 </footer>
 <!-- Kakao maps API -->
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_APPKEY_HERE"></script>
+<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=8842d176c845931a407c3ad4309249af"></script>
 <script>
     var container = document.getElementById('map');
     var options = {
