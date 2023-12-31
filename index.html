@@ -112,15 +112,17 @@
         </div>
     </nav>
     <section class="container mt-6 blurry-background">
-        
         <img src="static/img/메인화면.jpg" class="img-fluid mx-auto d-block" alt="Image 1" style="object-fit: cover; width: 100%; max-height: 800px; opacity: 0.5;">
-        <div class="centered-text" style = "font-size: 20px; color: #000 !important;">안녕하세요.<br>
+        <div class="centered-text" style = "font-size: 30px; color: #000 !important; position: absolute; top: 180px; left: 250px; text-align: left;">
+            안녕하세요.<br>
             더사랑통합재가센터입니다.<br>
-            편안하게 모시겠습니다.</div>
-
+            편안하게 모시겠습니다.
+        </div>
     </section>
     <!-- Map -->
     <section class="container mt-4">
+        <h1>찾아 오시는 길</h1>
+
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div id="map"></div>
@@ -148,6 +150,7 @@
             </div>
         </div>
     </section> -->
+    
     <div class="contact-badge">
         <!-- <img src="static/img/phone-icon.png" alt="전화 아이콘" /> 전화 아이콘 이미지 경로를 확인해주세요 -->
         <a href="tel:032-681-8621" style="font-size: 20px; color: white;">전화상담하기</a>
@@ -162,9 +165,10 @@
             <p>찾아주셔서 감사합니다. 친절함과 전문성으로 보답하겠습니다.</p>
         </div>
     </footer>
-
+    
+    
     <!-- Kakao maps API -->
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8842d176c845931a407c3ad4309249af"></script>
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=8842d176c845931a407c3ad4309249af"></script>
     <script>
         var container = document.getElementById('map');
         var options = {
