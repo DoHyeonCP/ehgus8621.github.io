@@ -24,6 +24,17 @@
         body {
             font-family: 'Roboto', sans-serif;
         }
+
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #4e4e4e;
+        }
+
     
         #map {
             width: 100%;
@@ -94,23 +105,6 @@
         }
 
 
-        .navbar-brand {
-            display: inline-block;
-            margin-right: -50%; /* Pull the brand to the center */
-            transform: translateX(50%); /* Adjust exact centering */
-            font-size: 1.25rem;
-            /* Other styles... */
-        }
-
-        .navbar {
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar-brand {
-            font-family: 'Noto Sans KR', sans-serif;
-            color: #4e4e4e;
-        }
 
          /* Footer 스타일링 */
         footer{
@@ -145,7 +139,9 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <!-- Brand/logo -->
-            <a class="navbar-brand" href="index.html">더사랑통합재가센터</a>
+            <a class="navbar-brand" href="index.html" style="font-weight: bold; color: green; font-size: 30px; font-family: 'Noto Sans KR', sans-serif; border: 2px solid green; padding: 10px; border-radius: 50%; display: inline-block;">
+                더사랑통합재가센터
+            </a>
             <!-- Toggler/Collapsible Button for mobile view -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -158,10 +154,10 @@
                         <a class="nav-link" href="index.html">홈</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="homecare.html">방문요양</a>
+                        <a class="nav-link" href="homecare.html">방문요양 소개</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="homebathing.html">방문목욕</a>
+                        <a class="nav-link" href="homebathing.html">방문목욕 소개</a>
                     </li>
                     <!-- More nav items -->
                 </ul>

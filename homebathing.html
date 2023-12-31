@@ -10,74 +10,121 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+    <style>
 
+
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: #4e4e4e;
+        }
+
+        .contact-badge {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background-color: #000080; /* 진한 파랑색 배경 */
+            color: white;
+            padding: 10px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            z-index: 1000;
+        }
+
+        .contact-badge img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+
+         /* Footer 스타일링 */
+        footer{
+            background-color: #343a40;
+            color: #fff;
+            padding-top: 20px;
+        }
+
+        footer .row div {
+            margin-bottom: 20px;
+        }
+
+        footer address, footer p {
+            margin: 0; /* 기본 마진 제거 */
+        }
+
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html" style="font-weight: bold; color: green; font-size: 30px; font-family: 'Noto Sans KR', sans-serif; border: 2px solid green; padding: 10px; border-radius: 50%; display: inline-block;">
-            더사랑
-        </a>
-        <!-- Toggle button for mobile view -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <!-- Navbar items -->
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">홈</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="homecare.html">방문요양</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="homebathing.html">방문목욕</a>
-                </li>
-                <!-- <li>
-                    <a class="nav-link" href="introduce.html">인삿말</a>
-                </li> -->
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="registration.html">장기요양등급대리신청문의</a>
-                </li> -->
-                <!-- Add other menu items as necessary -->
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="index.html" style="font-weight: bold; color: green; font-size: 30px; font-family: 'Noto Sans KR', sans-serif; border: 2px solid green; padding: 10px; border-radius: 50%; display: inline-block;">
+                더사랑통합재가센터
+            </a>
+            <!-- Toggler/Collapsible Button for mobile view -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="homecare.html">방문요양 소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="homebathing.html">방문목욕 소개</a>
+                    </li>
+                    <!-- More nav items -->
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- <div>
         <img src='static/img/방문목욕_Proto.png' alt="Right Image" class="img-fluid">
     </div> -->
 
-    <div class="content" style = "font-size: 20px; font-weight: bold;">
+    <div class="container content" style = "margin-top:100px; font-size: 20px; font-weight: bold;">
             <h1>1. 방문목욕이란?</h1><br>
-            집에서 편안하게 목욕을 원하시는 어르신을 위해 전문가가 집으로 직접 찾아와 목욕 서비스를 제공하는 것입니다.
-            <br><hr>
+            <p>
+                집에서 편안하게 목욕을 원하시는 어르신을 위해 전문가가 집으로 직접 찾아와 목욕 서비스를 제공하는 것입니다.
+            </p>
+            
+            <br>
             <h1>2. 방문목욕 왜 필요한가요?</h1><br>
-            집에서 나갈 필요 없이 안전하게 목욕을 즐기실 수 있습니다. 또한 전문가의 도움으로 안전하게 목욕을 마칠 수 있어요.</p>
+            <p>집에서 나갈 필요 없이 안전하게 목욕을 즐기실 수 있습니다. 또한 전문가의 도움으로 안전하게 목욕을 마칠 수 있어요.</p>
     </div>
     <hr> <!-- 구분선 -->
 
-    <div class="content" style = "font-size: 20px; font-weight: bold;">
+    <div class="container content" style = "font-size: 20px; font-weight: bold;">
         <h1> 3. 방문목욕 서비스 절차 </h1>
         <p>
             <br>
-            01. 목욕전 컨디션확인<br>
+            <h2>1) 목욕전 컨디션확인</h2>
             목욕시 저체력으로 인해 건강상 문제가 발생할 수 있고 목욕 후 체력이 떨어지는 등의 문제가 발생할 수 있으므로 반드시 목욕전에 대상자의 혈압, 체온, 맥박 등의 건강상태를 확인 후 입욕 여부를 결정합니다.<br><br>
-            02.입욕준비<br>
+            <h2>2)입욕준비</h2>
             서비스의 내용에 따라 목욕차량을 이용한 목욕, 이동욕조를 설치한 목욕 혹은 가정내의 욕조를 이용한 목욕을 실시하게 됩니다.<br><br>
-            03. 입욕<br>
+            <h2>3) 입욕</h2>
             세면과 머리감기를 우선적으로 실시하며 이후 온몸으로 이동하여 목욕을 실시하며 깨끗한 물로 한번 더 씻습니다.<br><br>
-            04. 닦고 머리말리기<br>
+            <h2>4) 닦고 머리말리기</h2>
             타월, 목욕가운 등을 걸치고 자리를 옮긴 후 몸을 닦고 드라이를 이용하여 머리를 깨끗히 말려줍니다.<br><br>
-            05. 목욕 후 컨디션 확인<br>
+            <h2>5) 목욕 후 컨디션 확인</h2>
             목욕 후 신체의 변화가 없는지에 대해 목욕 전 컨디션 확인 떄와 목욕 후에도 재확인 합니다.
         </p>
     </div>
-    <!-- 버튼 -->
-    <!-- <div class="text-center">
-        <a href="{% url 'registration' %}" class="btn btn-primary" style = "font-size: 30px; background: green;">장기요양등급대리신청하러가기</a>
-    </div> -->
+
+    <div class="contact-badge">
+        <a href="tel:010-8013-1134" style="font-size: 20px; color: white;">전화상담하기</a>
+    </div>
 
     <footer class="mt-5 p-4 text-white bg-dark footer">
         <div class="container">
