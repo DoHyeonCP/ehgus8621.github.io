@@ -223,6 +223,19 @@
 
         var map = new kakao.maps.Map(container, options);
 
+        kakao.maps.event.addListener(map, 'click', function(mouseEvent){
+            var latlng = mouseEvent.latLng;
+
+            // 카카오맵 길찾기 URL 생성
+            // 예시 URL: "https://map.kakao.com/?sName=현재위치&eName=목적지"
+            // '현재위치'와 '목적지'는 실제 값으로 대체해야 합니다.
+            var kakaoMapRouteUrl = `https://map.kakao.com/?sName=현재위치&eName=${latlng.getLat()},${latlng.getLng()}`;
+
+            // 새 창에서 카카오맵 길찾기 페이지 열기
+            window.open(kakaoMapRouteUrl, '_blank');
+
+        });
+
         var markerPosition  = new kakao.maps.LatLng(37.520963, 126.802299);
         var marker = new kakao.maps.Marker({
             position: markerPosition
